@@ -1,0 +1,7 @@
+module SRAM(
+	reg [18:0] addr,
+	reg [15:0] data,
+	reg rw
+);
+SRAM_CE_N <= 1'b1;
+endmodule;

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DE2_i2sound">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_i2sound|LPM_CONSTANT:inst39" CBX_FILE_NAME="lpm_constant_bt3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_i2sound|movingAverageFilter:inst12|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_pto.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_i2sound|movingAverageFilter:inst12|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_pfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_i2sound|LPM_CONSTANT:inst38" CBX_FILE_NAME="lpm_constant_7t3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_i2sound|movingAverageFilter:inst12|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_pto.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_i2sound|movingAverageFilter:inst12|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_k3h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_i2sound|movingAverageFilter:inst12|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_pfh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_i2sound|movingAverageFilter:inst12|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_eeh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_i2sound|movingAverageFilter:inst12|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_eeh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|DE2_i2sound|movingAverageFilter:inst12|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_k3h.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

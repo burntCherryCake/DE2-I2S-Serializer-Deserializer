@@ -1,0 +1,14 @@
+module memWriter(
+	inout wire [15:0] data_in;
+	output reg [17:0] addr;
+	output reg [15:0] data_out;
+	output reg rw;
+);
+
+addr <= 18'b000000000000000001;
+rw <= 1;
+data_out <= data_in;
+
+SRAM(addr, data_in, 0, );
+
+endmodule

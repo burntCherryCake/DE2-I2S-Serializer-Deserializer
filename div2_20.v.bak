@@ -1,0 +1,14 @@
+module div2_20(
+	input wire 50M_in,
+	output wire 1047576Hz_out
+);
+
+reg [25:0] counter = 0;
+
+always @(posedge 50M_in)begin
+	counter = counter + 1;
+end
+
+assign 1047576Hz_out = counter[25];
+
+endmodule

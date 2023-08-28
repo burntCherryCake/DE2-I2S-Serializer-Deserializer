@@ -1,0 +1,33 @@
+module I2S_Reserializer (
+  input wire BCLK,                   // Bit clock input
+  input wire LRCLK,                  // Left-right clock input
+  input wire [15:0] LEFT_CHANNEL,    // 16-bit parallel stream for left channel
+  input wire [15:0] RIGHT_CHANNEL,   // 16-bit parallel stream for right channel
+  output wire BCLK_OUT,              // Reserialized bit clock output
+  output wire LRCLK_OUT,              // Reserialized left-right clock output
+  output wire [15:0] AUD_OUT         // Reserialized audio data output
+);
+
+  reg [3:0] bit_counter;              // Bit counter for serialization (adjusted to 4 bits)
+  reg is_left_channel;                // Indicates whether the current data is for the left channel
+  reg [15:0] aud_out;                 // Reserialized audio data
+
+  always @(posedge BCLK) begin
+    if (LRCLK) begin
+      // Rising edge of LRCLK indicates left channel data
+      bit_counter <= 0;
+      is_left_channel <= 1;
+      aud_out <= LEFT_CHANNEL;
+    end else if (!LRCLK) begin
+      // Falling edge of LRCLK indicates right channel data
+      bit_counter <= 0;
+      is_left_channel <= 0;
+      aud_out <= RIGHT_CHANNEL;
+    end
+
+    AUD_OUT <= aud_out;
+
+    bit_counter <= bit_counter + 1;
+  end
+
+endmodule

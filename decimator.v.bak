@@ -1,0 +1,28 @@
+module processing (
+	LRCK,
+	AUD_IN,
+	AUD_OUT,
+	LED_OUT
+);
+	reg [2:0] decimationAmt = 4096;
+	input LRCK;
+	input [15:0] AUD_IN;
+	output reg LED_OUT;
+ 	output reg [15:0] AUD_OUT;
+	reg [15:0] AUD_IN_NOW;
+	reg [15:0]AUD_IN_HOLD;
+	reg [15:0] delayCounter = 16'h0;
+	
+	always @(negedge LRCK) begin
+		AUD_IN_NOW <= AUD_IN << 1'b1; //shift by 1 to fix off-by-one error mentioned in audio_parallel_to_serial. Fix actual problem later.
+		if(delayCounter%decimationAmt==0)begin
+			AUD_OUT <= AUD_IN_NOW;
+			AUD_IN_HOLD <= AUD_IN_NOW;
+			LED_OUT <= 1'b1;
+		end else begin
+			AUD_OUT <= AUD_IN_HOLD;
+			LED_OUT <= 1'b0;
+		end
+		delayCounter = delayCounter + 1;
+	end
+endmodule

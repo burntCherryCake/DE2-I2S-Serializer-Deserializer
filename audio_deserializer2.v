@@ -1,0 +1,185 @@
+module I2S_Deserializer (
+  input wire BCLK,       // Bit clock input
+  input wire LRCK,       // Left-right clock input
+  input AUD_IN,     // Audio data input
+  output wire [15:0] LEFT_CHANNEL,    // 16-bit parallel stream for left channel
+  output wire [15:0] RIGHT_CHANNEL    // 16-bit parallel stream for right channel
+);
+
+  reg [15:0] left_data;   // Register to hold left channel data
+  reg [15:0] right_data;  // Register to hold right channel data
+  reg [3:0] bit_counter;  // Bit counter for deserialization (adjusted to 4 bits)
+  reg is_left_channel;    // Indicates whether the current data is for the left channel
+
+  always @(posedge BCLK) begin
+    if (LRCK) begin
+      // Rising edge of LRCK indicates left channel data
+      bit_counter <= 0;
+      left_data <= 16'b0;
+      is_left_channel <= 1;
+    end else begin
+      // Falling edge of LRCK indicates right channel data
+      is_left_channel <= 0;
+    end
+
+    if (!LRCK) begin
+      // LRCK low indicates data bits
+      case (bit_counter)
+        0: begin
+          if (is_left_channel) begin
+            // Bit 0 (Left channel)
+            left_data[0] <= AUD_IN;
+          end else begin
+            // Bit 0 (Right channel)
+            right_data[0] <= AUD_IN;
+          end
+        end
+        1: begin
+          if (is_left_channel) begin
+            // Bit 1 (Left channel)
+            left_data[1] <= AUD_IN;
+          end else begin
+            // Bit 1 (Right channel)
+            right_data[1] <= AUD_IN;
+          end
+        end
+        2: begin
+          if (is_left_channel) begin
+            // Bit 2 (Left channel)
+            left_data[2] <= AUD_IN;
+          end else begin
+            // Bit 2 (Right channel)
+            right_data[2] <= AUD_IN;
+          end
+        end
+        3: begin
+          if (is_left_channel) begin
+            // Bit 3 (Left channel)
+            left_data[3] <= AUD_IN;
+          end else begin
+            // Bit 3 (Right channel)
+            right_data[3] <= AUD_IN;
+          end
+        end
+        4: begin
+          if (is_left_channel) begin
+            // Bit 4 (Left channel)
+            left_data[4] <= AUD_IN;
+          end else begin
+            // Bit 4 (Right channel)
+            right_data[4] <= AUD_IN;
+          end
+        end
+        5: begin
+          if (is_left_channel) begin
+            // Bit 5 (Left channel)
+            left_data[5] <= AUD_IN;
+          end else begin
+            // Bit 5 (Right channel)
+            right_data[5] <= AUD_IN;
+          end
+        end
+        6: begin
+          if (is_left_channel) begin
+            // Bit 6 (Left channel)
+            left_data[6] <= AUD_IN;
+          end else begin
+            // Bit 6 (Right channel)
+            right_data[6] <= AUD_IN;
+          end
+        end
+        7: begin
+          if (is_left_channel) begin
+            // Bit 7 (Left channel)
+          left_data[7] <= AUD_IN;
+        end else begin
+				// Bit 7 (Right channel)
+				right_data[7] <= AUD_IN;
+			end
+			end
+        8: begin
+          if (is_left_channel) begin
+            // Bit 8 (Left channel)
+            left_data[8] <= AUD_IN;
+          end else begin
+            // Bit 8 (Right channel)
+            right_data[8] <= AUD_IN;
+          end
+        end
+        9: begin
+          if (is_left_channel) begin
+            // Bit 9 (Left channel)
+            left_data[9] <= AUD_IN;
+          end else begin
+            // Bit 9 (Right channel)
+            right_data[9] <= AUD_IN;
+          end
+        end
+        10: begin
+          if (is_left_channel) begin
+            // Bit 10 (Left channel)
+            left_data[10] <= AUD_IN;
+          end else begin
+            // Bit 10 (Right channel)
+            right_data[10] <= AUD_IN;
+          end
+        end
+        11: begin
+          if (is_left_channel) begin
+            // Bit 11 (Left channel)
+            left_data[11] <= AUD_IN;
+          end else begin
+            // Bit 11 (Right channel)
+            right_data[11] <= AUD_IN;
+          end
+        end
+        12: begin
+          if (is_left_channel) begin
+            // Bit 12 (Left channel)
+            left_data[12] <= AUD_IN;
+          end else begin
+            // Bit 12 (Right channel)
+            right_data[12] <= AUD_IN;
+          end
+        end
+        13: begin
+          if (is_left_channel) begin
+            // Bit 13 (Left channel)
+            left_data[13] <= AUD_IN;
+          end else begin
+            // Bit 13 (Right channel)
+            right_data[13] <= AUD_IN;
+          end
+        end
+        14: begin
+          if (is_left_channel) begin
+            // Bit 14 (Left channel)
+            left_data[14] <= AUD_IN;
+          end else begin
+            // Bit 14 (Right channel)
+            right_data[14] <= AUD_IN;
+          end
+        end
+        15: begin
+          if (is_left_channel) begin
+            // Bit 15 (Left channel)
+            left_data[15] <= AUD_IN;
+          end else begin
+            // Bit 15 (Right channel)
+            right_data[15] <= AUD_IN;
+          end
+        end
+        default: begin
+          // Do nothing for higher bits
+        end
+      endcase
+
+      bit_counter <= bit_counter + 1;
+    end
+  end
+
+  // Assign the deserialized data to the output ports
+  assign LEFT_CHANNEL = left_data;
+  assign RIGHT_CHANNEL = right_data;
+
+endmodule

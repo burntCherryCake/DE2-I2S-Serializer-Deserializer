@@ -1,0 +1,11 @@
+module LED_STATUS(
+	input [15:0] din;
+	output led0;
+	output led1;
+	output led2;
+	output led3;
+);
+
+assign 
+
+endmodule

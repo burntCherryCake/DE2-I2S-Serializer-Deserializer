@@ -1,0 +1,264 @@
+module serial_and_parallel_passthrough_with_gaps_testbench;
+reg bck;
+reg lrck;
+reg dat;
+wire datOut;
+wire [15:0] outl;
+wire [15:0] outr;
+wire [15:0] temp;
+wire [3:0] temp3;
+wire [3:0] temp2;
+wire temp4;
+parameter stimDelay = 10;
+audio_serial_to_parallel DUT(bck, lrck, dat, outl, outr);
+audio_parallel_to_serial DUT2(bck, lrck, datOut, outl, outr, temp3, temp4);
+initial
+begin
+//expected Rdata: 1100 1010 1100 1010
+				 bck = 0; lrck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; lrck=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;//msb 1
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;//9
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat = 0; 
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; lrck=0; //lrclk switch to left channel last LSB
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1; //MSB left 
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1; 
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;  //<<- toggle lrclk on last bit//LSB left 
+#(stimDelay) bck = 1;
+ 
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; lrck=1;
+#(stimDelay) bck = 1;
+
+
+#(stimDelay) bck = 0; dat=0; //msb 1
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;//9
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0; //lrclk switch to left channel
+#(stimDelay) bck = 1; 
+
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; lrck=0;
+#(stimDelay) bck = 1;
+
+#(stimDelay) bck = 0; dat=0; //MSB left 
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1; //LSB left 
+#(stimDelay) bck = 1; 
+
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; lrck=1;
+#(stimDelay) bck = 1;
+
+#(stimDelay) bck = 0; dat=1;//msb 1
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;//9
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; dat=0; //lsb
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; //no data
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; //no data
+#(stimDelay) bck = 1;
+#(stimDelay) bck = 0; lrck=0;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=0; //MSB left 
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=0;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1;
+#(stimDelay) bck = 1; 
+#(stimDelay) bck = 0; dat=1; //LSB left 
+#(stimDelay) bck = 1; 
+#100; //Let simulation finish
+end
+
+endmodule

@@ -1,0 +1,13 @@
+module delayBy1bit(
+	input wire bck;
+	input wire lrck;
+	input wire aud;
+	output wire out;
+);
+
+reg bithold = 1'b0;
+
+always @(negedge bck) begin
+	out = hithold;
+	bithold = aud;
+end

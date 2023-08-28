@@ -1,0 +1,20 @@
+module FIR_Filter (
+    input wire [15:0] AUD_IN,
+    output wire [15:0] AUD_OUT
+);
+    // Filter coefficients (adjust according to desired filter characteristics)
+    parameter [15:0] COEFFS [0:2] = '{16'h0ABC, 16'h1234, 16'h5678};
+
+    // Internal signals
+    reg [15:0] delay_line [0:2];
+
+    always @(AUD_IN) begin
+        // Shift values in delay line
+        delay_line[2] <= delay_line[1];
+        delay_line[1] <= delay_line[0];
+        delay_line[0] <= AUD_IN;
+
+        // Filter output computation
+        AUD_OUT <= (COEFFS[2] * delay_line[2]) + (COEFFS[1] * delay_line[1]) + (COEFFS[0] * delay_line[0]);
+    end
+endmodule

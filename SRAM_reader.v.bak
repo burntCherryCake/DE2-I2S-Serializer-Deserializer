@@ -1,0 +1,13 @@
+module memReader(
+	inout reg data_in[15:0];
+	output reg addr[17:0];
+	output reg data_out[15:0];
+	output reg rw;
+);
+
+addr <= 18'b000000000000000001;
+rw <= 1;
+data_out <= data_in;
+
+
+endmodule

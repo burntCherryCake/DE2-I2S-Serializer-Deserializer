@@ -1,0 +1,244 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Meerkat\Downloads\DE2_v2.0.4_SystemCD\DE2_demonstrations\DE2_i2sound\simulation\modelsim
+vaudio_parallel_to_serial
+IOKL=E`eg9HA]gXY]d]bm`3
+VCNFQjKE4n?l9fiB??mZVj3
+Z1 dC:\Users\Meerkat\Downloads\DE2_v2.0.4_SystemCD\DE2_demonstrations\DE2_i2sound\simulation\modelsim
+w1685940784
+8C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+FC:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0
+!i10b 1
+!s100 bMImjK6dfl?8igNP`8IBe3
+!s85 0
+!s108 1685940824.529000
+!s107 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound|-O0|C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v|
+!s101 -O0
+vaudio_parallel_to_serial_testbench
+IPMLfWhmU`L<;]R0iRj`bb3
+V0]YbO[>[d;k1A8Yil7^<`3
+R1
+w1685761132
+8C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+FC:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+L0 1
+R2
+r1
+31
+Z5 o-work work -O0
+!i10b 1
+!s100 08CidHaENzH0Fd>N[0I9T1
+!s85 0
+!s108 1685940824.605000
+!s107 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v|
+!s90 -reportprogress|300|-work|work|-O0|C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v|
+!s101 -O0
+vaudio_serial_to_parallel
+Ifl`D:h[7hUUaXVPT>NkS<2
+VCf4]c2oM5[IML28zQ<[_80
+R1
+w1685937827
+8C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+FC:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+L0 1
+R2
+r1
+31
+R5
+!i10b 1
+!s100 8W^lOJJIEKFD`@b5j:32k1
+!s85 0
+!s108 1685940824.685000
+!s107 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v|
+!s90 -reportprogress|300|-work|work|-O0|C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v|
+!s101 -O0
+vaudio_serial_to_parallel_testbench
+!i10b 1
+!s100 W]n:YGEkhTh?L4L47iIZJ2
+IkKfLK66iS50:c^L@18Fh61
+V>DeU51_N^Y9bG7GU>3O3H3
+R1
+w1685748206
+8C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+FC:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1685940824.763000
+!s107 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v|
+!s90 -reportprogress|300|-work|work|-O0|C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v|
+!s101 -O0
+R5
+vCLOCK_500
+IaKj3V8=@RzKZe8:8?5QDP2
+VUl7aWJ9g<:`oQR3Ho>hmo2
+R1
+w1685931788
+8C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/CLOCK_500.v
+FC:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/CLOCK_500.v
+L0 4
+R2
+r1
+31
+R3
+R4
+n@c@l@o@c@k_500
+!i10b 1
+!s100 f_>K9Y5mZLVbllh^=34SA2
+!s85 0
+!s108 1685932091.812000
+!s107 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/CLOCK_500.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound|-O0|C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/CLOCK_500.v|
+!s101 -O0
+vi2c
+IFCU^D`RlHBn:HN]J7VE^B2
+V>Kgj8FbQ7]9BY=Q8EaKo;0
+R1
+Z6 w1412888158
+8C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/i2c.v
+FC:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/i2c.v
+L0 42
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 4GXe@0]Nk3VB6ND3Ua?Hk3
+!s85 0
+!s108 1685932091.891000
+!s107 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/i2c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound|-O0|C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/i2c.v|
+!s101 -O0
+vI2S_Deserializer
+I0C[h]aAMfPY6P[`:_id?E1
+Vh1V>c9KJfcX@RC<m_0KZD2
+R1
+w1685598754
+8C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_deserializer2.v
+FC:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_deserializer2.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@i2@s_@deserializer
+!i10b 1
+!s100 VcXBV;TO1h4SVg3LW=NeQ2
+!s85 0
+!s108 1685932091.974000
+!s107 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_deserializer2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound|-O0|C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_deserializer2.v|
+!s101 -O0
+vkeytr
+I:C7^a;gVngXK[KRD?c:M>1
+V2?>fk2?P6P_7g;Fg5Uakz2
+R1
+R6
+8C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/keytr.v
+FC:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/keytr.v
+L0 47
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 R1zkf^]TW9eehK[[zKX7A2
+!s85 0
+!s108 1685932092.060000
+!s107 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/keytr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound|-O0|C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/keytr.v|
+!s101 -O0
+vLED_STATUS
+I8hVO<S<d;hmA1EoLABUHl2
+VaQP1G@4D:f75e@?S5HD:h0
+R1
+w1685387873
+8C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/LED_STATUS.v
+FC:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/LED_STATUS.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@l@e@d_@s@t@a@t@u@s
+!i10b 1
+!s100 nRbgH9WIacNe34]YSo9PY3
+!s85 0
+!s108 1685932092.142000
+!s107 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/LED_STATUS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound|-O0|C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/LED_STATUS.v|
+!s101 -O0
+vMUX_1bit
+Igo6COC>nL0MZ[33533ODg0
+Vo@9<f<fG;MemgH>6ojU_[2
+R1
+w1685666253
+8C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/MUX-16bit.v
+FC:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/MUX-16bit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@m@u@x_1bit
+!i10b 1
+!s100 i1`83J_]gOaWNG2TiCHHK2
+!s85 0
+!s108 1685932092.223000
+!s107 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/MUX-16bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound|-O0|C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/MUX-16bit.v|
+!s101 -O0
+vserial_and_parallel_passthrough_testbench
+IYkD40k9;UZgXGgc7VDX>]3
+Vgk3CMOglB5]gm66;cZ6Y51
+R1
+w1685836015
+8C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+FC:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+L0 1
+R2
+r1
+31
+R5
+!i10b 1
+!s100 7D^nQR5Xe<<UgXnLe1XSL0
+!s85 0
+!s108 1685932092.304000
+!s107 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v|
+!s90 -reportprogress|300|-work|work|-O0|C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v|
+!s101 -O0
+vserial_and_parallel_passthrough_with_gaps_testbench
+I>iViF<0@];:fYY1^DhBgB3
+VG3`8_YCY8Xhli`Hzh9TP]3
+R1
+w1685853118
+8C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v
+FC:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v
+L0 1
+R2
+r1
+31
+R5
+!i10b 1
+!s100 _Sc1N_2eaeQG>JbdA^I0G3
+!s85 0
+!s108 1685932092.384000
+!s107 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v|
+!s90 -reportprogress|300|-work|work|-O0|C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v|
+!s101 -O0

@@ -1,0 +1,155 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 176 320)
+	(text "LED_STATUS" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst" (rect 8 288 20 300)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "btn" (rect 0 0 11 12)(font "Arial" ))
+		(text "btn" (rect 21 27 32 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "din[15..0]" (rect 0 0 34 12)(font "Arial" ))
+		(text "din[15..0]" (rect 21 43 55 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "led0" (rect 0 0 15 12)(font "Arial" ))
+		(text "led0" (rect 124 27 139 39)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32)(line_width 1))
+	)
+	(port
+		(pt 160 48)
+		(output)
+		(text "led1" (rect 0 0 14 12)(font "Arial" ))
+		(text "led1" (rect 125 43 139 55)(font "Arial" ))
+		(line (pt 160 48)(pt 144 48)(line_width 1))
+	)
+	(port
+		(pt 160 64)
+		(output)
+		(text "led2" (rect 0 0 15 12)(font "Arial" ))
+		(text "led2" (rect 124 59 139 71)(font "Arial" ))
+		(line (pt 160 64)(pt 144 64)(line_width 1))
+	)
+	(port
+		(pt 160 80)
+		(output)
+		(text "led3" (rect 0 0 15 12)(font "Arial" ))
+		(text "led3" (rect 124 75 139 87)(font "Arial" ))
+		(line (pt 160 80)(pt 144 80)(line_width 1))
+	)
+	(port
+		(pt 160 96)
+		(output)
+		(text "led4" (rect 0 0 16 12)(font "Arial" ))
+		(text "led4" (rect 123 91 139 103)(font "Arial" ))
+		(line (pt 160 96)(pt 144 96)(line_width 1))
+	)
+	(port
+		(pt 160 112)
+		(output)
+		(text "led5" (rect 0 0 15 12)(font "Arial" ))
+		(text "led5" (rect 124 107 139 119)(font "Arial" ))
+		(line (pt 160 112)(pt 144 112)(line_width 1))
+	)
+	(port
+		(pt 160 128)
+		(output)
+		(text "led6" (rect 0 0 15 12)(font "Arial" ))
+		(text "led6" (rect 124 123 139 135)(font "Arial" ))
+		(line (pt 160 128)(pt 144 128)(line_width 1))
+	)
+	(port
+		(pt 160 144)
+		(output)
+		(text "led7" (rect 0 0 15 12)(font "Arial" ))
+		(text "led7" (rect 124 139 139 151)(font "Arial" ))
+		(line (pt 160 144)(pt 144 144)(line_width 1))
+	)
+	(port
+		(pt 160 160)
+		(output)
+		(text "led8" (rect 0 0 15 12)(font "Arial" ))
+		(text "led8" (rect 124 155 139 167)(font "Arial" ))
+		(line (pt 160 160)(pt 144 160)(line_width 1))
+	)
+	(port
+		(pt 160 176)
+		(output)
+		(text "led9" (rect 0 0 15 12)(font "Arial" ))
+		(text "led9" (rect 124 171 139 183)(font "Arial" ))
+		(line (pt 160 176)(pt 144 176)(line_width 1))
+	)
+	(port
+		(pt 160 192)
+		(output)
+		(text "led10" (rect 0 0 18 12)(font "Arial" ))
+		(text "led10" (rect 121 187 139 199)(font "Arial" ))
+		(line (pt 160 192)(pt 144 192)(line_width 1))
+	)
+	(port
+		(pt 160 208)
+		(output)
+		(text "led11" (rect 0 0 17 12)(font "Arial" ))
+		(text "led11" (rect 122 203 139 215)(font "Arial" ))
+		(line (pt 160 208)(pt 144 208)(line_width 1))
+	)
+	(port
+		(pt 160 224)
+		(output)
+		(text "led12" (rect 0 0 18 12)(font "Arial" ))
+		(text "led12" (rect 121 219 139 231)(font "Arial" ))
+		(line (pt 160 224)(pt 144 224)(line_width 1))
+	)
+	(port
+		(pt 160 240)
+		(output)
+		(text "led13" (rect 0 0 18 12)(font "Arial" ))
+		(text "led13" (rect 121 235 139 247)(font "Arial" ))
+		(line (pt 160 240)(pt 144 240)(line_width 1))
+	)
+	(port
+		(pt 160 256)
+		(output)
+		(text "led14" (rect 0 0 20 12)(font "Arial" ))
+		(text "led14" (rect 119 251 139 263)(font "Arial" ))
+		(line (pt 160 256)(pt 144 256)(line_width 1))
+	)
+	(port
+		(pt 160 272)
+		(output)
+		(text "led15" (rect 0 0 18 12)(font "Arial" ))
+		(text "led15" (rect 121 267 139 279)(font "Arial" ))
+		(line (pt 160 272)(pt 144 272)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 288)(line_width 1))
+	)
+)

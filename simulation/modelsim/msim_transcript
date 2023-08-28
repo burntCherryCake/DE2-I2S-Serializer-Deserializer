@@ -1,0 +1,2426 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do DE2_i2sound_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound {C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/CLOCK_500.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CLOCK_500
+# 
+# Top level modules:
+# 	CLOCK_500
+# vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound {C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/i2c.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module i2c
+# 
+# Top level modules:
+# 	i2c
+# vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound {C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/keytr.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keytr
+# 
+# Top level modules:
+# 	keytr
+# vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound {C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+# vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound {C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/LED_STATUS.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LED_STATUS
+# 
+# Top level modules:
+# 	LED_STATUS
+# vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound {C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/MUX-16bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX_1bit
+# 
+# Top level modules:
+# 	MUX_1bit
+# vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound {C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_deserializer2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module I2S_Deserializer
+# 
+# Top level modules:
+# 	I2S_Deserializer
+# 
+vlog -reportprogress 300 -work work C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+# 	audio_serial_to_parallel_testbench
+pwd
+# C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/simulation/modelsim
+vsim work.audio_serial_to_parallel
+# vsim work.audio_serial_to_parallel 
+# Loading work.audio_serial_to_parallel
+add wave {audio_serial_to_parallel }
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel/AUD_BCK
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel/AUD_LRCK
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel/AUD_ADCDAT
+run
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+run
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+run
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+run
+vlog -reportprogress 300 -work work C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+run
+vsim work.audio_serial_to_parallel
+# vsim work.audio_serial_to_parallel 
+# Loading work.audio_serial_to_parallel
+add dataflow  \
+sim:/audio_serial_to_parallel/AUD_BCK
+# WARNING: No extended dataflow license exists
+# No drivers or ports for AUD_BCK
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel/AUD_BCK
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel/AUD_LRCK
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel/AUD_ADCDAT
+vlog -reportprogress 300 -work work C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+# ** Error: (vsim-3053) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): Illegal output or inout port connection for "port 'AUD_outL'".
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# ** Error: (vsim-3053) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): Illegal output or inout port connection for "port 'AUD_outR'".
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# Error loading design
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+# ** Error: (vsim-3053) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): Illegal output or inout port connection for "port 'AUD_outL'".
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# ** Error: (vsim-3053) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): Illegal output or inout port connection for "port 'AUD_outR'".
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# Error loading design
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+# ** Error: (vsim-3053) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): Illegal output or inout port connection for "port 'AUD_outL'".
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'AUD_outL'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(7).
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# ** Error: (vsim-3053) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): Illegal output or inout port connection for "port 'AUD_outR'".
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'AUD_outR'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(8).
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# Error loading design
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(11): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(11): (vlog-2110) Illegal reference to net "lrck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(11): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(12): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(13): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(13): (vlog-2110) Illegal reference to net "lrck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(14): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(15): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(15): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(16): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(17): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(17): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(18): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(19): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(19): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(20): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(21): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(21): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(22): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(23): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(23): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(24): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(25): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(25): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(26): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(27): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(27): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(28): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(29): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(29): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(30): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(31): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(31): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(32): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(33): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(33): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(34): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(35): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(35): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(36): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(37): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(37): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(38): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(39): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(39): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(40): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(41): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(41): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(42): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(43): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(43): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(44): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(45): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(45): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(46): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(47): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(48): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(49): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(50): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(51): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(51): (vlog-2110) Illegal reference to net "lrck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(52): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(53): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(53): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(54): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(55): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(55): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(56): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(57): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(57): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(58): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(59): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(59): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(60): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(61): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(61): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(62): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(63): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(63): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(64): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(65): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(65): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(66): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(67): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(67): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(68): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(69): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(69): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(70): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(71): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(71): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(72): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(73): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(73): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(74): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(75): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(75): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(76): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(77): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(77): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(78): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(79): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(79): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(80): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(81): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(81): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(82): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(83): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(83): (vlog-2110) Illegal reference to net "dat".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(84): (vlog-2110) Illegal reference to net "bck".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(85): (vlog-2110) Illegal reference to net "bck".
+# 
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'AUD_outL'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(7).
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'AUD_outR'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(8).
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/bck
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/outl
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/outr
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'AUD_outL'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(7).
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'AUD_outR'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(8).
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/bck
+run
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/dat
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/outl
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/outr
+run
+run
+run
+run -continue
+run -all
+run -all
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'AUD_outL'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(7).
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'AUD_outR'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(8).
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/bck \
+sim:/audio_serial_to_parallel_testbench/lrck \
+sim:/audio_serial_to_parallel_testbench/dat \
+sim:/audio_serial_to_parallel_testbench/outl \
+sim:/audio_serial_to_parallel_testbench/outr
+run -all
+add dataflow  \
+sim:/audio_serial_to_parallel_testbench/outl
+# WARNING: No extended dataflow license exists
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/bck \
+sim:/audio_serial_to_parallel_testbench/lrck \
+sim:/audio_serial_to_parallel_testbench/dat \
+sim:/audio_serial_to_parallel_testbench/outl \
+sim:/audio_serial_to_parallel_testbench/outr
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+# Load canceled
+run -all
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position insertpoint  \
+sim:/audio_serial_to_parallel_testbench/bck \
+sim:/audio_serial_to_parallel_testbench/lrck \
+sim:/audio_serial_to_parallel_testbench/dat \
+sim:/audio_serial_to_parallel_testbench/outl \
+sim:/audio_serial_to_parallel_testbench/outr
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+run -all
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+run -all
+restart
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+run -all
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+restart
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+restart
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+# Load canceled
+restart
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(9): near "output": syntax error, unexpected output, expecting ')'
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+restart
+# Loading work.audio_serial_to_parallel_testbench
+run -all
+restart
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step
+step
+step
+# Next activity is in 10 ps.
+step
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 10 ps.
+step -over
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 10 ps.
+step -over
+step -over
+step -over
+step
+step -over
+step -over
+step -over
+step -over
+step -over
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(9): near "output": syntax error, unexpected output, expecting ')'
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+restart
+# Loading work.audio_serial_to_parallel_testbench
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(9): near "output": syntax error, unexpected output, expecting ')'
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+run
+run -all
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+run -all
+# Break key hit 
+# Break key hit 
+run -all
+restart
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+step
+# Next activity is in 10 ps.
+step
+step
+step
+step
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 10 ps.
+step -over
+step -over
+step -over
+step -over
+step
+# Next activity is in 10 ps.
+step
+step
+step
+step
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# Next activity is in 10 ps.
+step -over
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(9): near "output": syntax error, unexpected output, expecting ')'
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+restart
+# Loading work.audio_serial_to_parallel_testbench
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+# WARNING: No extended dataflow license exists
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+run
+run -all
+run -all
+restart
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+restart
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(51): (vlog-2730) Undefined variable: 'AUDR_temp'.
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(53): (vlog-2730) Undefined variable: 'AUDL_temp'.
+# 
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+restart
+# Loading work.audio_serial_to_parallel_testbench
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(28): (vlog-2730) Undefined variable: 'AUDL_temp'.
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(29): (vlog-2730) Undefined variable: 'AUDR_temp'.
+# 
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+restart
+# Loading work.audio_serial_to_parallel_testbench
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(28): (vlog-2730) Undefined variable: 'AUDR_temp'.
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(33): (vlog-2730) Undefined variable: 'AUDL_temp'.
+# 
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+restart
+# Loading work.audio_serial_to_parallel_testbench
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+# Break in Module audio_serial_to_parallel_testbench at C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v line 14
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(28): (vlog-2730) Undefined variable: 'AUDR_temp'.
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(33): (vlog-2730) Undefined variable: 'AUDL_temp'.
+# 
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+run -all
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(28): (vlog-2730) Undefined variable: 'AUDR_temp'.
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(33): (vlog-2730) Undefined variable: 'AUDL_temp'.
+# 
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+restart
+# Loading work.audio_serial_to_parallel_testbench
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(28): (vlog-2730) Undefined variable: 'AUDR_temp'.
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(33): (vlog-2730) Undefined variable: 'AUDL_temp'.
+# 
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+restart
+# Loading work.audio_serial_to_parallel_testbench
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(29): (vlog-2730) Undefined variable: 'AUDR_temp'.
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(34): (vlog-2730) Undefined variable: 'AUDL_temp'.
+# 
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+restart
+# Loading work.audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(29): (vlog-2730) Undefined variable: 'AUDR_temp'.
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(34): (vlog-2730) Undefined variable: 'AUDL_temp'.
+# 
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+# ** Warning: (vsim-3017) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# ** Warning: (vsim-3722) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): [TFMPC] - Missing connection for port 'test'.
+# 
+run -all
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+run -all
+restart
+# ** Warning: (vsim-3017) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): [TFMPC] - Too few port connections. Expected 6, found 5.
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+# ** Warning: (vsim-3722) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(8): [TFMPC] - Missing connection for port 'test'.
+# 
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+add wave -position end  sim:/audio_serial_to_parallel_testbench/stimDelay
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v(9): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'test2'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v(10).
+# 
+#         Region: /audio_serial_to_parallel_testbench/DUT
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp2
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+run -all
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+add wave -position end  sim:/audio_serial_to_parallel_testbench/stimDelay
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp2
+restart
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+add wave -position end  sim:/audio_serial_to_parallel_testbench/stimDelay
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp2
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+run -all
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+add wave -position end  sim:/audio_serial_to_parallel_testbench/stimDelay
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp2
+restart
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+add wave -position end  sim:/audio_serial_to_parallel_testbench/stimDelay
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp2
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.audio_serial_to_parallel_testbench
+# vsim work.audio_serial_to_parallel_testbench 
+# Loading work.audio_serial_to_parallel_testbench
+# Loading work.audio_serial_to_parallel
+add wave -position end  sim:/audio_serial_to_parallel_testbench/bck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/dat
+add wave -position end  sim:/audio_serial_to_parallel_testbench/lrck
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outl
+add wave -position end  sim:/audio_serial_to_parallel_testbench/outr
+add wave -position end  sim:/audio_serial_to_parallel_testbench/stimDelay
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp
+add wave -position end  sim:/audio_serial_to_parallel_testbench/temp2
+run -all
+quit -sim
+vlog -reportprogress 300 -work work C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vlog -reportprogress 300 -work work C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(9): near ";": syntax error, unexpected ';', expecting ')'
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Error: (vsim-3053) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(11): Illegal output or inout port connection for "port 'AUD_DATA'".
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(11): [PCDPC] - Port size (1 or 1) does not match connection size (16) for port 'AUD_DATA'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(5).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(11): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+# Error loading design
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial
+# Loading work.audio_parallel_to_serial_testbench
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+# WARNING: No extended dataflow license exists
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(45): (vlog-2730) Undefined variable: 'LRCK'.
+# 
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+# ** Warning: (vsim-3015) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v(10): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'test'. The port definition is at: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v(10).
+# 
+#         Region: /audio_parallel_to_serial_testbench/DUT
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vsim work.audio_parallel_to_serial_testbench
+# vsim work.audio_parallel_to_serial_testbench 
+# Loading work.audio_parallel_to_serial_testbench
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/audio_parallel_to_serial_testbench/bck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datl
+add wave -position end  sim:/audio_parallel_to_serial_testbench/datr
+add wave -position end  sim:/audio_parallel_to_serial_testbench/lrck
+add wave -position end  sim:/audio_parallel_to_serial_testbench/out
+add wave -position end  sim:/audio_parallel_to_serial_testbench/stimDelay
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp
+add wave -position end  sim:/audio_parallel_to_serial_testbench/temp2
+run -all
+vlog -reportprogress 300 -work work C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v(1): near ")": syntax error, unexpected ')', expecting import or ';' or '#' or '('
+vlog -reportprogress 300 -work work C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v(168): (vlog-2110) Illegal reference to net "inl".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v(169): (vlog-2110) Illegal reference to net "inr".
+# 
+vlog -reportprogress 300 -work work C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v(170): (vlog-2110) Illegal reference to net "inl".
+# 
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v(171): (vlog-2110) Illegal reference to net "inr".
+# 
+vlog -reportprogress 300 -work work C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v(170): near "always": syntax error, unexpected always
+# ** Error: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v(174): near "end": syntax error, unexpected end
+vlog -reportprogress 300 -work work C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_testbench
+vsim work.serial_and_parallel_passthrough_testbench
+# vsim work.serial_and_parallel_passthrough_testbench 
+# Loading work.serial_and_parallel_passthrough_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+# ** Error: (vsim-3053) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v(14): Illegal output or inout port connection for "port 'AUD_DATA'".
+# 
+#         Region: /serial_and_parallel_passthrough_testbench/DUT2
+# Error loading design
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_testbench
+vsim work.serial_and_parallel_passthrough_testbench
+# vsim work.serial_and_parallel_passthrough_testbench 
+# Loading work.serial_and_parallel_passthrough_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+# ** Error: (vsim-3053) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v(14): Illegal output or inout port connection for "port 'AUD_DATA'".
+# 
+#         Region: /serial_and_parallel_passthrough_testbench/DUT2
+# Error loading design
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_testbench
+vsim work.serial_and_parallel_passthrough_testbench
+# vsim work.serial_and_parallel_passthrough_testbench 
+# Loading work.serial_and_parallel_passthrough_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/datOut
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/lrck
+run -all
+# WARNING: No extended dataflow license exists
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_testbench
+vsim work.serial_and_parallel_passthrough_testbench
+# vsim work.serial_and_parallel_passthrough_testbench 
+# Loading work.serial_and_parallel_passthrough_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/datOut
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/lrck
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_testbench
+vsim work.serial_and_parallel_passthrough_testbench
+# vsim work.serial_and_parallel_passthrough_testbench 
+# Loading work.serial_and_parallel_passthrough_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/datOut
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/lrck
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_testbench
+vsim work.serial_and_parallel_passthrough_testbench
+# vsim work.serial_and_parallel_passthrough_testbench 
+# Loading work.serial_and_parallel_passthrough_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/datOut
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/lrck
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_testbench
+vsim work.serial_and_parallel_passthrough_testbench
+# vsim work.serial_and_parallel_passthrough_testbench 
+# Loading work.serial_and_parallel_passthrough_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/datOut
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/lrck
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_testbench
+vsim work.serial_and_parallel_passthrough_testbench
+# vsim work.serial_and_parallel_passthrough_testbench 
+# Loading work.serial_and_parallel_passthrough_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/datOut
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/lrck
+run -all
+restart
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/outl
+add wave -position end  sim:/serial_and_parallel_passthrough_testbench/outr
+run -all
+vlog -reportprogress 300 -work work C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_with_gaps_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_with_gaps_testbench
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/datOut
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/lrck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/outl
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/outr
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_with_gaps_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_with_gaps_testbench
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/lrck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/outl
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/outr
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/datOut
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_with_gaps_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_with_gaps_testbench
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/lrck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/outl
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/outr
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/datOut
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+# ** Fatal: (vsim-3365) C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v(13): Too many port connections. Expected 5, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /serial_and_parallel_passthrough_with_gaps_testbench/DUT File: C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# FATAL ERROR while loading design
+# Error loading design
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_with_gaps_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_with_gaps_testbench
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/outl
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/outr
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/datOut
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/lrck
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/lrck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/outl
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/outr
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/datOut
+run -all
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_with_gaps_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_with_gaps_testbench
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/datOut
+add wave -position 1  sim:/serial_and_parallel_passthrough_with_gaps_testbench/lrck
+run -all
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/CLOCK_500.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CLOCK_500
+# 
+# Top level modules:
+# 	CLOCK_500
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/i2c.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module i2c
+# 
+# Top level modules:
+# 	i2c
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_deserializer2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module I2S_Deserializer
+# 
+# Top level modules:
+# 	I2S_Deserializer
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/keytr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keytr
+# 
+# Top level modules:
+# 	keytr
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/LED_STATUS.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LED_STATUS
+# 
+# Top level modules:
+# 	LED_STATUS
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/MUX-16bit.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX_1bit
+# 
+# Top level modules:
+# 	MUX_1bit
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_testbench
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_with_gaps_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_with_gaps_testbench
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/lrck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/datOut
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/CLOCK_500.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CLOCK_500
+# 
+# Top level modules:
+# 	CLOCK_500
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/i2c.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module i2c
+# 
+# Top level modules:
+# 	i2c
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_deserializer2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module I2S_Deserializer
+# 
+# Top level modules:
+# 	I2S_Deserializer
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/keytr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keytr
+# 
+# Top level modules:
+# 	keytr
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/LED_STATUS.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LED_STATUS
+# 
+# Top level modules:
+# 	LED_STATUS
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/MUX-16bit.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX_1bit
+# 
+# Top level modules:
+# 	MUX_1bit
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_testbench
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_with_gaps_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_with_gaps_testbench
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/lrck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/datOut
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/CLOCK_500.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CLOCK_500
+# 
+# Top level modules:
+# 	CLOCK_500
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/i2c.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module i2c
+# 
+# Top level modules:
+# 	i2c
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_deserializer2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module I2S_Deserializer
+# 
+# Top level modules:
+# 	I2S_Deserializer
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/keytr.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keytr
+# 
+# Top level modules:
+# 	keytr
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/LED_STATUS.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LED_STATUS
+# 
+# Top level modules:
+# 	LED_STATUS
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/MUX-16bit.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX_1bit
+# 
+# Top level modules:
+# 	MUX_1bit
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_testbench
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_passthrough_testbench_with_gap.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module serial_and_parallel_passthrough_with_gaps_testbench
+# 
+# Top level modules:
+# 	serial_and_parallel_passthrough_with_gaps_testbench
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/lrck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/dat
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/datOut
+run -all
+add wave -position 3  sim:/serial_and_parallel_passthrough_with_gaps_testbench/outl
+restart
+run -all
+add wave -position 4  sim:/serial_and_parallel_passthrough_with_gaps_testbench/outr
+restart
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/datOut
+add wave -position 1  sim:/serial_and_parallel_passthrough_with_gaps_testbench/lrck
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial
+# 
+# Top level modules:
+# 	audio_parallel_to_serial
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_parallel_to_serial_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_parallel_to_serial_testbench
+# 
+# Top level modules:
+# 	audio_parallel_to_serial_testbench
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel
+# 
+# Top level modules:
+# 	audio_serial_to_parallel
+vlog -work work -O0 C:/Users/Meerkat/Downloads/DE2_v2.0.4_SystemCD/DE2_demonstrations/DE2_i2sound/audio_serial_to_parallel_testbench.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module audio_serial_to_parallel_testbench
+# 
+# Top level modules:
+# 	audio_serial_to_parallel_testbench
+vsim work.serial_and_parallel_passthrough_with_gaps_testbench
+# vsim work.serial_and_parallel_passthrough_with_gaps_testbench 
+# Loading work.serial_and_parallel_passthrough_with_gaps_testbench
+# Loading work.audio_serial_to_parallel
+# Loading work.audio_parallel_to_serial
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/bck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/lrck
+add wave -position end  sim:/serial_and_parallel_passthrough_with_gaps_testbench/datOut
+run -all

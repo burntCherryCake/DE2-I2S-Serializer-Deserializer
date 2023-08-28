@@ -1,0 +1,46 @@
+module movingAverageFilter(
+	output reg [17:0] addr_out,
+	output reg [15:0] data_out,
+	output reg writePulse,
+	output reg readPulse,
+	input wire BCK,
+	input wire LRCK,
+	input wire [15:0] inL;
+	input wire [15:0] inR;
+	output reg [15:0] outL;
+	output reg [15:0] outR;
+);
+
+	reg [15:0] data = 16'hAAAA;
+	reg [17:0] addr = 18'b0;
+	reg [5:0] counter = 6'b0;
+	reg LRCK_prev = 0;
+	integer avgLength = 0; //static value
+	integer sampleLCounter = 0; //counts up until avgLength is met
+	integer sampleRCounter = 0;
+	
+always @(posedge BCK) begin
+		writePulse = 0; //prev write should be done by now.
+		if(LRCK != LRCK_prev) begin
+			//new sample is ready to process.
+			if(sampleCounter < avgLength) begin
+				//store current sample into memory
+				if(LRCK)begin
+					//currenly R channel is recieving, so store L channel data because that's done.
+					addr = 2*sampleLCounter; //even addresses are for left channel
+					data = inL;
+					sampleLCounter = sampleLCounter + 1;
+				end else begin
+					addr = 2*sampleLCounter +1; //odd addresses are for right channel
+					data = inR;
+					sampleRCounter = sampleRCounter + 1;
+				end
+				writePulse = 1; //toggle this off on the next BCK cycle.
+			end else begin
+				//at this point, we're guaranteed to have a full data buffer to work with
+				
+			end	
+		end
+		LRCK_prev = LRCK;
+end
+endmodule
